@@ -3,12 +3,14 @@ using DataStructuresIssues.ArraysStrings;
 
 var solutions = new Dictionary<int, ISolveIssue>
 {
-    { 1, new UniqueString() }
+    { 1, new UniqueString() },
+    { 2, new CheckPermutation() },
+    { 3, new ContainsPermutation() },
 };
 
 while (true)
 {
-    Console.WriteLine("\nPlease select solution Number or q to exit:");
+    Console.WriteLine($"\nPlease select solution Number or {Helper.QuitStr} to exit:");
     foreach (var item in solutions)
     {
         var typeName = item.Value.ToString();
@@ -16,7 +18,7 @@ while (true)
     }
 
     var solutionNum = Console.ReadLine();
-    if (solutionNum == "q")
+    if (solutionNum == Helper.QuitStr)
     {
         break;
     }
