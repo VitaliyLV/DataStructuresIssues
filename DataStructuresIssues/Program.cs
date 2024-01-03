@@ -6,6 +6,7 @@ var solutions = new Dictionary<int, ISolveIssue>
     { 1, new UniqueString() },
     { 2, new CheckPermutation() },
     { 3, new ContainsPermutation() },
+    { 4, new OneAway() },
 };
 
 while (true)
