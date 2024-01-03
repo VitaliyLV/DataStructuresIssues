@@ -1,12 +1,15 @@
 ﻿
-namespace DataStructuresIssues.ArraysStrings
+namespace DataStructuresIssues.Solutions
 {
     internal class UniqueString : ISolveIssue
     {
         const string isUnique = "TRUE. The string has all unique values";
         const string notUnique = "FALSE. The string has non unique values";
-        //Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you 
-        //cannot use additional data structures?
+
+        /// <summary>
+        ///Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you 
+        ///cannot use additional data structures?
+        ///</summary>
         public void Solve()
         {
             while (true)

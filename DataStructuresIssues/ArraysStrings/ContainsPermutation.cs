@@ -1,13 +1,15 @@
-﻿namespace DataStructuresIssues.ArraysStrings
+﻿namespace DataStructuresIssues.Solutions
 {
     internal class ContainsPermutation : ISolveIssue
     {
         const string trueResponse = "TRUE. The string are permutations";
         const string falseResponse = "FALSE. The strings are not permutations";
 
-        //LeetCode 567. Permutation in String
-        //Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.
-        //In other words, return true if one of s1's permutations is the substring of s2.
+        /// <summary>
+        ///LeetCode 567. Permutation in String
+        ///Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.
+        ///In other words, return true if one of s1's permutations is the substring of s2.
+        ///</summary>
         public void Solve()
         {
             while (true)

@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace DataStructuresIssues.ArraysStrings
+namespace DataStructuresIssues.Solutions
 {
     internal class OneAway : ISolveIssue
     {

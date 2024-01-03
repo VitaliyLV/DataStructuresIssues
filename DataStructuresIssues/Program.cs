@@ -1,13 +1,20 @@
 ﻿using DataStructuresIssues;
-using DataStructuresIssues.ArraysStrings;
+using System.Reflection;
 
-var solutions = new Dictionary<int, ISolveIssue>
+var solutions = new Dictionary<int, ISolveIssue>();
+
+string nspace = "DataStructuresIssues.Solutions";
+int i = 0;
+var types = from t in Assembly.GetExecutingAssembly().GetTypes()
+        where t.IsClass && t.Namespace == nspace
+        select t;
+foreach (var item in types)
 {
-    { 1, new UniqueString() },
-    { 2, new CheckPermutation() },
-    { 3, new ContainsPermutation() },
-    { 4, new OneAway() },
-};
+    var tp = item.GetConstructor(Type.EmptyTypes)?.Invoke(Array.Empty<object>());
+    ISolveIssue? solveIssue = tp as ISolveIssue;
+    if (tp != null)
+        solutions.Add(i++, solveIssue);
+}
 
 while (true)
 {

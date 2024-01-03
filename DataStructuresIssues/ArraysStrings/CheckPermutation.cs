@@ -1,11 +1,13 @@
-﻿namespace DataStructuresIssues.ArraysStrings
+﻿namespace DataStructuresIssues.Solutions
 {
     internal class CheckPermutation : ISolveIssue
     {
         const string trueResponse = "TRUE. The string are permutations";
         const string falseResponse = "FALSE. The strings are not permutations";
 
-        //Check Permutation: Given two strings, write a method to decide if one is a permutation of the other.
+        /// <summary>
+        ///Check Permutation: Given two strings, write a method to decide if one is a permutation of the other.
+        ///</summary>
         public void Solve()
         {
             while (true)
