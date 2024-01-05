@@ -2,16 +2,11 @@
 
 namespace DataStructuresIssues.Solutions
 {
-    /// <summary>
-    /// Remove Dups: Write code to remove duplicates from an unsorted linked list
-    /// LeetCode 1836
-    /// </summary>
     internal class RemoveDups : ISolveIssue
     {
         /// <summary>
-        /// Rotate Matrix: Given an image represented by an NxN matrix, where each pixel in the image is 4
-        /// bytes, write a method to rotate the image by 90 degrees.Can you do this in place?
-        /// LeetCode 48 Rotate image
+        /// Remove Dups: Write code to remove duplicates from an unsorted linked list
+        /// LeetCode 1836
         /// </summary>
         public void Solve()
         {
