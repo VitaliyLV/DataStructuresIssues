@@ -28,5 +28,24 @@ namespace DataStructuresIssues
             }
             return head;
         }
+        public static List<int>? ReadNumbers()
+        {
+            Console.WriteLine("Enter numbers separated by space:");
+            var readStr = Console.ReadLine();
+            if (readStr == null || readStr == Helper.QuitStr)
+            {
+                return null;
+            }
+            List<int> numbers = new List<int>();
+            var values = readStr.Split(' ');
+            if (values.Length > 0)
+            {
+                for (int i = 0; i < values.Length; i++)
+                {
+                    numbers.Add(int.Parse(values[i]));
+                }
+            }
+            return numbers;
+        }
     }
 }
