@@ -12,7 +12,7 @@ foreach (var item in types)
 {
     var tp = item.GetConstructor(Type.EmptyTypes)?.Invoke(Array.Empty<object>());
     ISolveIssue? solveIssue = tp as ISolveIssue;
-    if (tp != null)
+    if (solveIssue != null)
         solutions.Add(i++, solveIssue);
 }
 

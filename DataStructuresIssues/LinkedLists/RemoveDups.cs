@@ -12,7 +12,7 @@ namespace DataStructuresIssues.Solutions
         {
             while (true)
             {
-                ListNode? head = Helper.ReadList();
+                ListNode? head = Helper.ReadNumberList();
                 if (head == null)
                 {
                     return;

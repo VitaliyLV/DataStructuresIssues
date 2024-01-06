@@ -5,10 +5,10 @@ namespace DataStructuresIssues
     internal class Helper
     {
         public static readonly string QuitStr = "q";
-        public static ListNode? ReadList()
+        public static ListNode? ReadNumberList()
         {
             ListNode head = new ListNode();
-            Console.WriteLine("Enter linked list values separated by space:");
+            Console.WriteLine("Enter linked list values(numbers) separated by space:");
             var readStr = Console.ReadLine();
             if (readStr == null || readStr == Helper.QuitStr)
             {
