@@ -1,4 +1,5 @@
-﻿using DataStructuresIssues.LinkedLists;
+﻿using DataStructuresIssues.Graphs;
+using DataStructuresIssues.LinkedLists;
 
 namespace DataStructuresIssues
 {
@@ -47,5 +48,27 @@ namespace DataStructuresIssues
             }
             return numbers;
         }
+        public static void PrintNodes(Node? node)
+        {
+            if (node == null)
+                Console.WriteLine();
+            Queue<Node> queue = new Queue<Node>();
+            node.isVisited = true;
+            queue.Enqueue(node);
+
+            while (queue.Count > 0)
+            {
+                Node node1 = queue.Dequeue();
+                Console.WriteLine(node1.val);
+                foreach (Node node2 in node1.children)
+                {
+                    if (node2.isVisited)
+                        continue;
+                    queue.Enqueue(node2);
+                    node2.isVisited = true;
+                }
+            }
+        }
+
     }
 }

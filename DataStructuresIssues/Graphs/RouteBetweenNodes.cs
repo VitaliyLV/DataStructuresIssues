@@ -28,6 +28,9 @@ namespace DataStructuresIssues.Solutions
                 nodes[1].children.Add(nodes[3]);
                 nodes[1].children.Add(nodes[4]);
 
+                Console.WriteLine("Existing graph:");
+                Helper.PrintNodes(nodes[0]);
+
                 Console.WriteLine("Select 2 nodes:");
                 var nums = Helper.ReadNumbers();
                 if (nums == null || nums.Count != 2)
